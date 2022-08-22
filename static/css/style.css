@@ -5,6 +5,11 @@ $gl-sm         : "screen and (max-width: 48em)";   // max 768px
 $gl-md         : "screen and (max-width: 64em)";   // max 1024px
 $gl-lg         : "screen and (max-width: 80em)";   // max 1280px
 
+body {
+   background-image: url(../images/bg.jpg);
+}
+
+
 // table style
 
 table             {
@@ -101,7 +106,7 @@ ul {
    margin: 0;
    padding: 0;
    overflow: hidden;
-   background-color: #333;
+   background-color: #;
 }
 li {
     float: left;
@@ -114,9 +119,17 @@ li a {
    text-decoration: none;
 }
 a.active {
-   background-color: #4CAF50;
+   background-color: #004f98;
 }
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
+    background-color: #63c5da;
 }
+
+
+   .add{
+   margin:auto;
+   width:30%;
+   padding:5px;
+   }
+

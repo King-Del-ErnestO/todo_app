@@ -7,8 +7,8 @@
         <script src="{{ url_for('static',filename='js/twemoji.min.js')}}"></script>
         <script src="{{ url_for('static',filename='js/emoji.js')}}"></script>
     </head>
-<body>
-    <h1>{{ h }}</h1>
+<body style="background-image: url(/static/images/bg1.jpg); background-repeat:no-repeat; background-size: cover;">
+    <h1 style="text-align:center;">{{ h }}</h1>
     <ul>
         <li><a href="/list" class="{{ a1 }}">ALL</a></li>
         <li><a href="/uncompleted" class="{{ a2 }}">Uncompleted</a></li>
@@ -83,10 +83,12 @@
         <td><input type="text" name="name" placeholder="Taskname" ></td>
         <td><textarea name="desc" rows="1" cols="30" placeholder="Enter Description here..." required></textarea></td>
         <td><input type="text" name="date" placeholder="Date" /></td>
-        <td><input type="text" name="pr" placeholder="Priority" /></td>
-        <td><button type="submit" class="button"> Create </button></td>
+        <td class="add"><input type="text" name="pr" placeholder="Priority"  /></td>
         </tr>
     </table>
+        <div class="add" ><button type="submit" class="button"> Create </button></div>
+
+
     </form>
 
     <footer style="padding-top:30px;">
