@@ -1,9 +1,11 @@
 from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
+from flask_cors import CORS
 from bson import ObjectId
 import os
 
 app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 title = "TODO sample app with Flask and MongoDB"
 heading = "TODO APP with Flask and MongoDB"
