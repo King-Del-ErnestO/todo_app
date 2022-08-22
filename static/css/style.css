@@ -1,0 +1,122 @@
+
+$gl-ms         : "screen and (max-width: 23.5em)"; // up to 360px
+$gl-xs         : "screen and (max-width: 35.5em)"; // up to 568px
+$gl-sm         : "screen and (max-width: 48em)";   // max 768px
+$gl-md         : "screen and (max-width: 64em)";   // max 1024px
+$gl-lg         : "screen and (max-width: 80em)";   // max 1280px
+
+// table style
+
+table             {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background:white;
+  border-radius:6px;
+  overflow:hidden;
+  max-width:800px;
+  width:100%;
+  margin:0 auto;
+  position:relative;
+
+  *               { position:relative }
+
+  td,th           { padding-left:8px}
+
+  thead tr        {
+    height:60px;
+    background:#FFED86;
+    font-size:16px;
+  }
+
+  tbody tr        { height:48px; border-bottom:1px solid #E3F1D5 ;
+    &:last-child  { border:0; }
+  }
+
+  td,th           { text-align:left;
+    &.l           { text-align:right }
+    &.c           { text-align:center }
+    &.r           { text-align:center }
+  }
+}
+
+
+@media #{$gl-xs}              {
+
+  table                       { display:block;
+    > *,tr,td,th              { display:block }
+
+    thead                     { display:none }
+    tbody tr                  { height:auto; padding:8px 0;
+      td                      { padding-left:45%; margin-bottom:12px;
+        &:last-child          { margin-bottom:0 }
+        &:before              {
+          position:absolute;
+          font-weight:700;
+          width:40%;
+          left:10px;
+          top:0
+        }
+
+        &:nth-child(1):before { content:"Code";}
+        &:nth-child(2):before { content:"Stock";}
+        &:nth-child(3):before { content:"Cap";}
+        &:nth-child(4):before { content:"Inch";}
+        &:nth-child(5):before { content:"Box Type";}
+      }
+    }
+  }
+}
+
+
+.hscroll {
+  overflow-x: auto; /* Horizontal */
+}
+
+.button {
+  background-color: #1338be; /* Green */
+  border:2px solid;
+  border-radius:30px;
+  color: white;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+// body style
+
+body               {
+  background:#9BC86A;
+  font:400 14px 'Calibri','Arial';
+  padding:20px;
+}
+
+blockquote {
+  color:white;
+  text-align:center;
+}
+ul {
+    list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+a.active {
+   background-color: #4CAF50;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
