@@ -79,7 +79,7 @@ table             {
 
 .button {
   background-color: #1338be; /* Green */
-  border:2px solid;
+  border:none;
   border-radius:30px;
   color: white;
   padding: 4px 10px;
@@ -127,9 +127,9 @@ li a:hover {
 }
 
 
-   .add{
-   margin:auto;
-   width:30%;
-   padding:5px;
-   }
+.add{
+margin:auto;
+width:30%;
+padding:5px;
+}
 
